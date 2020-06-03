@@ -11,7 +11,7 @@ module.exports = {
     }, //輸出
     module: {
         rules: [{
-            test: /\.css$/,
+            test: /\.(sass|scss|css)$/, 
             use: [{
                     loader: MiniCssExtractPlugin.loader,
                     options: {
@@ -21,11 +21,14 @@ module.exports = {
                     }
                 },
                 {
-                    loader: 'css-loader', //(順序1)
+                    loader: 'css-loader', //(順序2)
                     options: {
                         modules: true
                     }
-                }]
+                },{
+                    loader: 'sass-loader'//(順序1)
+                }
+            ]
         }]
     },
     plugins: [

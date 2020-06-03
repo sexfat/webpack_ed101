@@ -1,5 +1,7 @@
-import  "./style.css";
-import  "./header.css";
+// import  "./style.css";
+// import  "./header.css";
+import  "./sass/style.scss";
+
 
 var obj =  require('./cal');
 

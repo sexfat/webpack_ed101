@@ -81,30 +81,30 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./cal.js":
-/*!****************!*\
-  !*** ./cal.js ***!
-  \****************/
+/***/ "./src/cal.js":
+/*!********************!*\
+  !*** ./src/cal.js ***!
+  \********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n//計算函式\nfunction calculate(n) {\n    return n * 100 + 'unit'\n}\n//字串\nvar text = 'hi webpack';\n\n\nmodule.exports = {\n   name : text,\n   cal : calculate\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jYWwuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jYWwuanM/OTdjYiJdLCJzb3VyY2VzQ29udGVudCI6WyJcbi8v6KiI566X5Ye95byPXG5mdW5jdGlvbiBjYWxjdWxhdGUobikge1xuICAgIHJldHVybiBuICogMTAwICsgJ3VuaXQnXG59XG4vL+Wtl+S4slxudmFyIHRleHQgPSAnaGkgd2VicGFjayc7XG5cblxubW9kdWxlLmV4cG9ydHMgPSB7XG4gICBuYW1lIDogdGV4dCxcbiAgIGNhbCA6IGNhbGN1bGF0ZVxufVxuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./cal.js\n");
+eval("\n//計算函式\nfunction calculate(n) {\n    return n * 100 + 'unit'\n}\n//字串\nvar text = 'hi webpack';\n\n\nmodule.exports = {\n   name : text,\n   cal : calculate\n}\n\n\n//# sourceURL=webpack:///./src/cal.js?");
 
 /***/ }),
 
-/***/ "./index.js":
-/*!******************!*\
-  !*** ./index.js ***!
-  \******************/
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var obj =  __webpack_require__(/*! ./cal */ \"./cal.js\");\n\nconsole.log(obj.cal(10));\nconsole.log(obj.name);\n\n\n\n\n// console.log('ok');//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9pbmRleC5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2luZGV4LmpzPzQxZjUiXSwic291cmNlc0NvbnRlbnQiOlsidmFyIG9iaiA9ICByZXF1aXJlKCcuL2NhbCcpO1xuXG5jb25zb2xlLmxvZyhvYmouY2FsKDEwKSk7XG5jb25zb2xlLmxvZyhvYmoubmFtZSk7XG5cblxuXG5cbi8vIGNvbnNvbGUubG9nKCdvaycpOyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./index.js\n");
+eval("var obj =  __webpack_require__(/*! ./cal */ \"./src/cal.js\");\n\nconsole.log(obj.cal(10));\nconsole.log(obj.name);\n// console.log('ok');\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

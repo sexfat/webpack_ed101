@@ -5,4 +5,4 @@ import  "./sass/style.scss";
 
 // console.log(obj.cal(10));
 // console.log(obj.name);
-// console.log('ok');
+console.log('okww');

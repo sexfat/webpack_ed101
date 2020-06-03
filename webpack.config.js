@@ -5,11 +5,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 module.exports = {
-    mode: 'production', // "production" | "development" | "none"  開發模式
+    mode: 'development', // "production" | "development" | "none"  開發模式
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].bundle.js'
+        filename: '[name].bundle-[hash].js'
     }, //輸出
     module: {
         rules: [{
@@ -35,7 +35,7 @@ module.exports = {
     },
     plugins: [
          //清理舊的檔案
-         new CleanWebpackPlugin(),
+        new CleanWebpackPlugin(),
         //這個套件是載入 css 檔案
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output

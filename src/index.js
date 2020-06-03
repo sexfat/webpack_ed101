@@ -1,3 +1,5 @@
+import  "./style.css";
+
 var obj =  require('./cal');
 
 console.log(obj.cal(10));

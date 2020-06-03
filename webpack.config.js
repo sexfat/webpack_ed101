@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -9,8 +10,14 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].bundle-[hash].js'
+        filename: '[name].bundle.js'
     }, //輸出
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        index : 'index.html',
+        port: 3300
+    },
     module: {
         rules: [{
             test: /\.(sass|scss|css)$/, 

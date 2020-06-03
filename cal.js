@@ -8,6 +8,6 @@ var text = 'hi webpack';
 
 
 module.exports = {
-   name : 'bryant',
+   name : text,
    cal : calculate
 }
